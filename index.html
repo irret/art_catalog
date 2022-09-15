@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Homepage</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!-- include meta viewport element -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- local bootstrap stylesheet -->
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+
+    <!-- 1. local jQyery JS file -->
+    <script src="external/jquery/jquery.js"></script>
+    <!-- 2. popper JavaScript library required for Boostrap's JS -->
+    <script src="js/popper.js"></script>
+    <!-- 3. local bootstrap JavaScript library (after loading jQuery) -->
+    <script src="js/bootstrap.min.js"></script>
+
+
+    <!-- local jQuery UI JS file-->
+    <script src="jquery-ui.min.js"></script>
+    <!--local jQuery UI Default CSS file -->
+    <link rel="stylesheet" href="jquery-ui.min.css">
+
+    <!-- custom stylesheet -->
+    <link rel="stylesheet" href="styles/stylesheet.css">
+
+
+</head>
+
+<body>
+    <div id="container">
+        <div class="header">
+            <nav class="navbar navbar-expand-lg navbar-1">
+                <a class="navbar-brand" href="index.html">The Art Catalog <img src="assets/ornate_a_24352_sm.gif" alt="logo" class="logo"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="artists.html">Artists</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="frida.html">Frida Kahlo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="georgia.html">Georgia O'Keeffe</a>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="vincent.html">Van Gogh</a>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pablo.html">Picasso</a>
+
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About &amp; Credits</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+
+        </div>
+        <div id="mainImage">
+            <figure>
+                <img src="assets/frida_1.jpg" alt="Self Portrait with necklace of thorns by Frida Kahlo" class="img-fluid">
+                <figcaption class="text-muted text-center">Self Portrait with Monkeys by Frida Kahlo, via <a href="https://www.racked.com/2017/4/21/15221528/frida-kahlo-republic-nail-polish-lipstick-cvs">Racked</a></figcaption>
+            </figure>
+        </div>
+
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2 class="text-uppercase">Featured Artists</h2>
+            </div>
+
+            <div class="card col-sm-12 col-md-4 text-center">
+
+                <div class="card-body">
+                    <h5 class="card-title font-weight-light">Frida Kahlo</h5>
+                    <img class="card-img-top" src="assets/home_kahlo.jpg" alt="Card image cap">
+                    <div id="accordion">
+
+                        <h3>About</h3>
+                        <div>
+                            <p class="card-text text-justify">Born Magdalena Carmen Frida Kahlo y Calderón; 6 July 1907 – 13 July 1954) was a Mexican artist who painted many portraits, self-portraits, and works inspired by the nature and artifacts of Mexico. Inspired by the country's popular culture, she employed a naïve folk art style to explore questions of identity, postcolonialism, gender, class, and race in Mexican society.</p>
+                            <p class="text-center text-muted">Image and Text From <a href="https://en.wikipedia.org/wiki/Frida_Kahlo">Wikipedia</a></p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="card  col-sm-12 col-md-4 text-center">
+
+                <div class="card-body">
+                    <h5 class="card-title font-weight-light">Vincent Van Gogh</h5>
+                    <img class="card-img-top" src="assets/home_vangogh.jpg" alt="Card image cap">
+                    <div id="accordion2">
+
+                        <h3>About</h3>
+                        <div>
+                            <p class="card-text text-justify"> Dutch Post-Impressionist painter who is among the most famous and influential figures in the history of Western art. In just over a decade he created about 2,100 artworks, including around 860 oil paintings, most of them in the last two years of his life. They include landscapes, still lifes, portraits and self-portraits, and are characterised by bold colours and dramatic, impulsive and expressive brushwork that contributed to the foundations of modern art. His suicide at 37 followed years of mental illness and poverty.</p>
+                            <p class="text-center text-muted">Image and Text From <a href="https://en.wikipedia.org/wiki/Vincent_van_Gogh">Wikipedia</a></p>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="card  col-sm-12 col-md-4 text-center">
+
+                <div class="card-body">
+                    <h5 class="card-title font-weight-light">Pablo Picasso</h5>
+                    <img class="card-img-top" src="assets/home_picasso.jpg" alt="Card image cap">
+                    <div id="accordion3">
+
+                        <h3>About</h3>
+                        <div>
+                            <p class="card-text text-justify">Spanish painter, sculptor, printmaker, ceramicist, stage designer, poet and playwright who spent most of his adult life in France. Regarded as one of the most influential artists of the 20th century, he is known for co-founding the Cubist movement, the invention of constructed sculpture,the co-invention of collage, and for the wide variety of styles that he helped develop and explore.</p>
+                            <p class="text-center text-muted">Image and Text From <a href="https://en.wikipedia.org/wiki/Pablo_Picasso">Wikipedia</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer text-center">
+            <p> Copyright &copy; 2018
+            </p>
+        </div>
+    </div>
+
+
+
+
+    <script>
+        $('#accordion, #accordion2, #accordion3').accordion({
+            collapsible: true,
+            active: false
+        });
+
+    </script>
+</body>
+
+</html>

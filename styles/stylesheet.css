@@ -1,0 +1,116 @@
+body {
+    background-color: #fff;
+}
+
+#container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+h2 {
+    color: grey;
+}
+
+
+
+.row {
+    padding: 10px;
+    margin: auto;
+}
+
+
+nav {
+    background-color: black;
+}
+
+a.nav-link {
+    color: grey;
+    margin: 0 5px;
+}
+
+li.active > a {
+    border-bottom: 1px dotted;
+}
+
+
+li a:hover {
+    border-bottom: dotted 1px;
+}
+
+.navbar.navbar-1 .navbar-toggler-icon {
+    background-image: url('https://mdbootstrap.com/img/svg/hamburger6.svg?color=000');
+}
+
+a.navbar-brand {
+    color: lightgrey;
+}
+
+span {
+    font-size: 15px;
+    color: black;
+}
+
+.nav-link {
+    color: grey;
+}
+
+
+form {
+    height: 500px;
+    background-image: url(../assets/artists_gogh.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: .7;
+}
+
+.form-group {
+    padding: 10px;
+}
+
+form label {
+    color: white;
+}
+
+
+.footer p {
+    padding: 5px;
+    margin: 0px;
+    background-color: black;
+    color: white;
+}
+
+.card {
+    border: none;
+    border-radius: 0;
+}
+
+#accordion h3,
+#accordion2 h3,
+#accordion3 h3 {
+    background-color: lightgrey;
+}
+
+.ui-accordion-content {
+    min-height: 400px;
+}
+
+.ui-state-active {
+    border: none;
+}
+
+.images {
+    padding: 20px 0px;
+    margin: 20px 0;
+
+}
+
+.images a {
+    padding: 0px;
+    text-align: center;
+    background-color: black;
+}
+
+.images img {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.51);
+}

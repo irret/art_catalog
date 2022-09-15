@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Artists</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!-- include meta viewport element -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="Clip carousel">
+    <meta name="keywords" content="clip responsive jQuery plugin Greensock Gsap animation carousel">
+
+    <!-- local bootstrap stylesheet -->
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="fontello/css/fontello.css">
+
+
+    <!-- 1. local jQyery JS file -->
+    <script src="external/jquery/jquery.js"></script>
+    <!-- 2. popper JavaScript library required for Boostrap's JS -->
+    <script src="js/popper.js"></script>
+    <!-- 3. local bootstrap JavaScript library (after loading jQuery) -->
+    <script src="js/bootstrap.min.js"></script>
+
+
+    <!-- local jQuery UI JS file-->
+    <script src="js/jquery-ui.min.js"></script>
+    <!--local jQuery UI Default CSS file -->
+    <link rel="stylesheet" href="styles/jquery-ui.min.css">
+
+    <!-- custom stylesheet -->
+    <link rel="stylesheet" href="styles/stylesheet.css">
+
+    <!-- 5. load css for Ekko Lightbox -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
+    <!-- 6. load js.min for Ekko Lightbox -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-1">
+                <a class="navbar-brand" href="index.html">The Art Catalog <img src="assets/ornate_a_24352_sm.gif" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+
+  </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="artists.html">Artists</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="frida.html">Frida Kahlo</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About &amp; Credits</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2 class="text-uppercase"> Artists</h2>
+            </div>
+
+            <!-- make a collection of linked images -->
+            <section class="container">
+                <div class="row">
+
+                    <a href="imgs/img1.JPG" data-toggle="lightbox" data-gallery="gallery1" class="col-md-4">
+
+                        <img src="imgs/img1.jpg" class="img-fluid" alt="image">
+                    </a>
+                    <a href="imgs/img2.jpg" data-toggle="lightbox" data-gallery="gallery1" class="col-md-4">
+                        <p>Van Gogh</p>
+                        <img src="imgs/img2.jpg" class="img-fluid" alt="image">
+                    </a>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Frida Kahlo</h5>
+                    </div>
+                    <a href="imgs/img3.jpg" data-toggle="lightbox" data-gallery="gallery1" class="col-md-4">
+                        <p>Picasso</p>
+
+                        <img src="imgs/img3.jpg" class="img-fluid" alt="image">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Frida Kahlo</h5>
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- add javascript at end of body element to start lightbox code -->
+    <script>
+        // use jquery to add code that runs on click event for any element with data-toggle="lightbox"
+        $(document).on(
+            'click',
+            '[data-toggle="lightbox"]',
+            // this code runs when a link with data-toggle is clicked
+            function(event) {
+                // stop browser from performing normal link to big image
+                event.preventDefault();
+                // call custom js code in ekko lightbox js file passing the a element clicked as this
+                $(this).ekkoLightbox();
+            }
+        );
+
+    </script>
+</body>
+
+</html>
